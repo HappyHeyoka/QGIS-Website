@@ -116,8 +116,7 @@ First install some tools you will need for this instructions::
 Now install the QGIS Signing Key, so QGIS software from 
 the QGIS repo will be trusted and installed::
 
- wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
- sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+ wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | sudo apt-key add -
 
 Add the QGIS repo for the latest stable QGIS (|version|.x |codename|).
 
